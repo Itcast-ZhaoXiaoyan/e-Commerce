@@ -1,0 +1,44 @@
+/*布局样式*/
+*{
+	margin: 0 auto;
+}
+#header{
+	width:960px;  height: 30px;
+	margin: 0 auto; 
+	border: 0 0 6px 6px;
+}
+#nav{
+	width: 960px; height: 100px;
+	margin: 0 auto;   background: #ffc;
+}
+#search{
+	width: 958px;  height: 114px;
+	margin: 0 auto 10px;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;
+}
+#search .bar{}
+
+#content{width: 960px; margin: 0 auto;}
+/*上部分*/
+.main{width: 710px;}
+.main .main_ad{
+	margin-bottom: 10px; 
+	border-radius: 6px;
+	overflow: hidden;
+}
+.main .options{
+	width: 350px;height: 200px;
+	background: #ff9;
+}
+.main .section{
+	width: 318px; height: 200px;
+	padding: 0 15px;
+	border: 1px solid #dbdbdb; border-radius: 6px;
+	margin-bottom: 10px;
+}
+/*下部分*/
+.side{width: 240px;}
+
+#footer{}
+
