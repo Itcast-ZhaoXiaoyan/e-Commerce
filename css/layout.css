@@ -1,16 +1,23 @@
 /*布局样式*/
-*{
-	margin: 0 auto;
+
+body{
+	margin-bottom: 30px;
 }
+
+/*第一部分：首部区域header*/
 #header{
 	width:960px;  height: 30px;
 	margin: 0 auto; 
 	border: 0 0 6px 6px;
 }
+
+/*第二部分：导航区域nav*/
 #nav{
 	width: 960px; height: 100px;
 	margin: 0 auto;   background: #ffc;
 }
+
+/*第三部分：查询区域search*/
 #search{
 	width: 958px;  height: 114px;
 	margin: 0 auto 10px;
@@ -19,13 +26,16 @@
 }
 #search .bar{}
 
+
+
+/*第四部分：内容区域content*/
 #content{width: 960px; margin: 0 auto;}
-/*上部分*/
+/*4—1：内容——左边部分main fl*/
 .main{width: 710px;}
 .main .main_ad{
 	margin-bottom: 10px; 
 	border-radius: 6px;
-	overflow: hidden;
+	overflow: hidden;    /*将图片溢出的部分进行隐藏*/
 }
 .main .options{
 	width: 350px;height: 200px;
@@ -37,8 +47,34 @@
 	border: 1px solid #dbdbdb; border-radius: 6px;
 	margin-bottom: 10px;
 }
-/*下部分*/
-.side{width: 240px;}
 
-#footer{}
+/*4-2：内容——侧边(右)部分side fr*/
+.side{width: 240px;}
+.side .side_ad{
+	border-radius: 6px;overflow: hidden;
+	margin-bottom: 10px;
+}
+.side .ad_border{
+	width: 238px; height: 88px;
+	border: 1px solid #dbdbdb;
+	border-radius:6px;    overflow: hidden;
+	margin-bottom: 10px;
+}
+.side_section{
+	height: 60px;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px; 
+	margin-bottom: 10px;
+}
+
+
+
+/*第五部分：尾部区域footer*/
+#footer{
+	width: 958px; height: 78px;
+	margin: 0 auto;
+	background: #f9f9f9;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;	
+}
 
