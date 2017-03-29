@@ -1,44 +1,20 @@
-/*布局样式*/
-*{
-	margin: 0 auto;
+/*公共样式public*/
+.clear{zoom: 1;}   /*清浮动——IE系列*/
+.clear:after{
+	content: "";  display: block;  /*块级元素*/
+	clear: both;
 }
-#header{
-	width:960px;  height: 30px;
-	margin: 0 auto; 
-	border: 0 0 6px 6px;
-}
-#nav{
-	width: 960px; height: 100px;
-	margin: 0 auto;   background: #ffc;
-}
-#search{
-	width: 958px;  height: 114px;
-	margin: 0 auto 10px;
-	border: 1px solid #dbdbdb;
-	border-radius: 6px;
-}
-#search .bar{}
+/*清除父元素浮动——标准浏览器：非IE系列*/
 
-#content{width: 960px; margin: 0 auto;}
-/*上部分*/
-.main{width: 710px;}
-.main .main_ad{
-	margin-bottom: 10px; 
-	border-radius: 6px;
-	overflow: hidden;
-}
-.main .options{
-	width: 350px;height: 200px;
-	background: #ff9;
-}
-.main .section{
-	width: 318px; height: 200px;
-	padding: 0 15px;
-	border: 1px solid #dbdbdb; border-radius: 6px;
-	margin-bottom: 10px;
-}
-/*下部分*/
-.side{width: 240px;}
+.fl{float: left;}
+.fr{float: right;}
 
-#footer{}
-
+/*渐变*/
+.gradient{
+	background: -moz-linear-gradient(top,#ffffff,#f8f8f8); /*Chrome*/
+	background: -webkit-linear-gradient(top,#ffffff,#f8f8f8);  /*火狐*/
+	background: -ms-linear-gradient(top,#ffffff,#f8f8f8);   /*IE*/
+	background: linear-gradient(top,#ffffff,#f8f8f8);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#f8f8f8)";  /*渐变*/
+	+background: #f9f9f9;				
+}
