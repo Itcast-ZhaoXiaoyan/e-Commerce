@@ -8,17 +8,44 @@
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="shortcut icon" href="img/100du.ico" />
 		<script src="js/jquery-1.11.0.min.js"></script>
+		<!--[if IE 6]>
+		<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js" ></script>
+		<script>
+			DD_belatedPNG.fix('*');
+		</script>
+		<![endif]-->
 	</head>
 	<body>
 	<!--头部区域-->
-		<div id="header" class="gradient"></div>
+		<div id="header" class="gradient">
+			<p class="city">
+				切换城市：
+				<a href="#" class="active">北京</a>
+				<a href="#">上海</a>
+				<a href="#">福州</a>
+				<a href="#">广州</a>
+				<a href="#">青岛</a>
+			</p>
+			<p class="link">
+				<a href="#" class="ico1">加盟100度</a>
+				<a href="#" class="ico2">商品管理</a>
+			</p>
+		</div>
 	
 	<!--导航区域-->
 		<div id="nav"></div>
 		
 	<!--查询区域-->
 		<div id="search" class="gradient">
-			<div class="bar"></div>
+			<div class="bar">
+				<ul class="menu">
+					<li class="active">搜店</li>
+					<li class="gradient">地址</li>
+					<li class="gradient">优惠券</li>
+					<li class="gradient">全文</li>
+					<li class="gradient">视频</li>
+				</ul>
+			</div>
 		</div>
 		
 		
