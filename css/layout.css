@@ -13,7 +13,7 @@ body{
 	border: 1px solid #dbdbdb;
 	border-radius: 6px;
 }
-.main_ad,  .side_section, .side_ad, .ad_border{
+.main_ad, .side_section, .side_ad, .ad_border{
 	margin-bottom: 10px;
 }
 
@@ -34,24 +34,26 @@ body{
 /*第三部分：查询区域search*/
 #search{
 	width: 958px;  height: 114px;
-	margin: 0 auto 10px;
+	margin: 0 auto 10px; position: relative;
 }
-#search .bar{}
+
 
 
 
 /*第四部分：内容区域content*/
 /*4—1：内容——左边部分main fl*/
 .main{width: 710px;}
-.main_wrap{padding-bottom:10px;}
+.main_wrap{padding-bottom: 10px;}
 .main .main_ad{
 	border-radius: 6px;
 	overflow: hidden;    /*将图片溢出的部分进行隐藏*/
 }
 .main .options{
 	width: 350px;height: 200px;
-	background: #ff9;
+	/*background: #ff9;*/
+	position: relative;
 }
+
 .main .section{
 	width: 318px; height: 200px;
 	padding: 0 15px;
@@ -67,7 +69,7 @@ body{
 	overflow: hidden;
 }
 .side_section{
-	height: 60px;
+	height: 60px; padding: 12px;
 }
 
 
@@ -77,6 +79,65 @@ body{
 	width: 958px; height: 78px;
 	margin: 0 auto;
 	background: #f9f9f9;
+}
+
+
+/*第四部分：内容区域——选项卡下的样式布局*/
+.options .nav{
+	height: 34px; 
+	position: relative;  z-index: 2;
+}
+.options .nav li{width: 172px;  height: 33px;
+	border: 1px solid #dbdbdb;  border-bottom: none;
+	border-radius: 6px 6px 0 0;
+}
+.options .nav .active{width: 172px; height: 34px; background: #fff;}
+.options .con{
+	width: 348px; height: 80px;
+	border:1px solid #dbdbdb;
+	border-radius: 0 0 6px 6px;
+	position: absolute;   /*父级options相对定位，子级绝对定位*/
+	top: 34px;   left: 0;  /*为了兼容IE6*/
+	z-index: 1;   /*z-index在nav与con间，乘积为2，nav比con值大，所以覆盖con*/
+}
+
+#header .city{float: left; padding:5px 0 0 20px;}
+#header .city a{
+	display: inline-block;  	
+	height: 18px;  line-height: 18px;
+	padding: 0 7px;		background: #fff;
+	color: #999;
+	border: 1px solid #e5e5e5; 	border-radius:4px; 
+	box-shadow: 1px 1px 0px #ededed;}
+#header .city .active,#header .city .active:hover{color: #d60d03; background: #fff;}
+#header .city a:hover{background: #f1f1f1;}
+#header .link{float: right; padding-right: 20px;
+line-height: 30px; color: #d5d5d5;	word-spacing: 4px;}
+#header .link a{
+	background: url(../img/header_link_bg.gif) no-repeat;
+	padding-left: 20px;		color: #666;
+}
+#header .link a:hover{text-decoration: underline;}
+#header .link .ico1{background-position: 0 3px;}
+#header .link .ico2{background-position: 0 -27px;}
+
+
+#search .bar{width:958px;  height: 64px; 
+	border: 1px solid #c40d0e;  	border-radius: 5px;
+	position: absolute;   top: 16px;  left: -1px;
+	background: #e21c01;
+	box-shadow: 2px 3px 0 #e3e3e3;
+}
+#search .menu{position: absolute;  left: 226px;	top: -27px;}
+#search .menu li{float: left; width: 78px; height: 25px; 
+margin-right: 1px;  display: inline-block;
+border: 1px solid #f8d0bf;	border-radius: 5px 5px 0 0;	border-bottom: none;
+cursor: pointer;	box-shadow: 2px 3px 2px #E3E3E3;   
+font-size: 14px;  text-align: center;  line-height: 25px;
+}
+#search .menu .active{height: 27px; background: #E21C01;
+color: #fff;  font-weight: blod;
+position: relative;		top: -1px; 
 }
 
 
